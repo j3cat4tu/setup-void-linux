@@ -244,12 +244,15 @@ client.background       #ffffff
 #config do teclado US internacional
 exec --no-startup-id setxkbmap us intl
 
+#inicia o pipewire
+exec --no-startup-id pipewire
+
 #compositor
 exec --no-startup-id "fastcompmgr -o 0.4 -r 12 -c -C"
 
 
 # Wallpaper
-exec_always --no-startup-id feh --bg-fill /home/jeca/wallpaper/wallpaper3.jpg
+exec_always --no-startup-id feh --bg-fill /home/jeca/wallpaper/wallpaper.jpg
 
 for_window [class="^,*"] border pixel 2
 
